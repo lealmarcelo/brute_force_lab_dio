@@ -21,7 +21,7 @@ Para a realização dos testes, foi configurado um laboratório virtual isolado,
 
 | Propósito | Sistema Operacional | Endereço IP (Exemplo) |
 | :--- | :--- | :--- |
-| 📍 **Atacante** | Kali Linux | `192.168.56.102` |
+| 📍 **Atacante** | Kali Linux | `192.168.56.100` |
 | 🎯 **Vítima** | Metasploitable 2 | `192.168.56.103` |
 
 ### Ferramentas Utilizadas
@@ -30,3 +30,21 @@ Para a realização dos testes, foi configurado um laboratório virtual isolado,
 * **Medusa:** Ferramenta principal para a execução dos ataques de força bruta.
 * **Enum4Linux:** Para enumeração de usuários no serviço SMB.
 * **Wordlists:** Listas de senhas e usuários
+
+
+## 3. Descobrir IPs e verificar a conectividade entre as maquinas
+
+Para descobrir o ip do Kali 
+
+ip addr
+
+Com os seguintes comando é possivel descobrir os ips da rede para encontrar a VM Metasploitable
+
+arp  -a
+
+sudo nmap -sn 192.168.56.0/24
+ 
+sudo netdiscover -r 192.168.56.0/24
+
+
+
