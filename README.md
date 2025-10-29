@@ -66,5 +66,5 @@ Com  o seguinte comando vamos verificar os serviços disponiveis no sistema alvo
 nmap -sV -p 21,22,80,445,139 192.168.56.103
 ```
 
-![Scan Report NMAP](scan report 192p168p56p103.jpg)
+![Scan Report NMAP](imagens/scan report 192p168p56p103.jpg)
 
