@@ -55,7 +55,7 @@ sudo netdiscover -r 192.168.56.0/24
 
 Com os comando acima descobrimos que o ip da nossa VM Metasploitable é IP: 192.168.56.103
 
-Confitmando o IP no Metasploitable
+Confirmando o IP no Metasploitable
 
 ![IPs Meta](imagens/verificacao_ip_meta.PNG)
 
@@ -66,5 +66,5 @@ Com  o seguinte comando vamos verificar os serviços disponiveis no sistema alvo
 nmap -sV -p 21,22,80,445,139 192.168.56.103
 ```
 
-![Scan Report NMAP](scan_report_192p168p56p103.PNG)
+![Scan Report NMAP](scan report 192p168p56p103.jpg)
 
