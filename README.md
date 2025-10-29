@@ -21,8 +21,8 @@ Para a realização dos testes, foi configurado um laboratório virtual isolado,
 
 | Propósito | Sistema Operacional | Endereço IP (Exemplo) |
 | :--- | :--- | :--- |
-| 📍 **Atacante** | Kali Linux | `192.168.56.100` |
-| 🎯 **Vítima** | Metasploitable 2 | `192.168.56.103` |
+| 📍 **Atacante** | Kali Linux | `192.168.56.xxx` |
+| 🎯 **Vítima** | Metasploitable 2 | `192.168.56.xxx` |
 
 ### Ferramentas Utilizadas
 
@@ -51,4 +51,4 @@ sudo nmap -sn 192.168.56.0/24
 sudo netdiscover -r 192.168.56.0/24
 ```
 
-
+Com os comando acima descobrimos que o ip da nossa VM Metasploitable é IP: 192.168.56.103
