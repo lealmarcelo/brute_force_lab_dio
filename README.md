@@ -68,3 +68,11 @@ nmap -sV -p 21,22,80,445,139 192.168.56.103
 
 ![Scan Report NMAP](imagens/scan_report.PNG)
 
+Apos rodar o scan temos os serviço e as versoes que estão rodando 
+
+Para confirma se o serviço esta ativo vamos realizar a tentativa de conexao 
+
+![Conectar ao FTP](imagens/conexao_ftp.PNG)
+
+
+## 5 Criando a wordlist para utilizar no ataque
