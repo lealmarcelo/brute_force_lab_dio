@@ -51,5 +51,15 @@ sudo nmap -sn 192.168.56.0/24
 ```bash 
 sudo netdiscover -r 192.168.56.0/24
 ```
+![Descobrindo IPs](descobrindo_ips.png)
 
 Com os comando acima descobrimos que o ip da nossa VM Metasploitable é IP: 192.168.56.103
+
+
+## 4. Reconhecimeto (nmap)
+
+Com  o seguinte comando vamos verificar os serviços disponiveis no sistema alvo
+```bash
+nmap -sV -p 21,22,80,445,139 192.168.56.103
+```
+
