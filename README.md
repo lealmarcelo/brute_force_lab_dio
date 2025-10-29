@@ -21,7 +21,7 @@ Para a realização dos testes, foi configurado um laboratório virtual isolado,
 
 | Propósito | Sistema Operacional | Endereço IP (Exemplo) |
 | :--- | :--- | :--- |
-| 📍 **Atacante** | Kali Linux 2024.x | `192.168.56.102` |
+| 📍 **Atacante** | Kali Linux | `192.168.56.102` |
 | 🎯 **Vítima** | Metasploitable 2 | `192.168.56.103` |
 
 ### Ferramentas Utilizadas
