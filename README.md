@@ -36,15 +36,19 @@ Para a realização dos testes, foi configurado um laboratório virtual isolado,
 
 Para descobrir o ip do Kali 
 
+```bash
 ip addr
-
+```
 Com os seguintes comando é possivel descobrir os ips da rede para encontrar a VM Metasploitable
 
+```bash
 arp  -a
-
+```
+```bash
 sudo nmap -sn 192.168.56.0/24
- 
+```
+```bash 
 sudo netdiscover -r 192.168.56.0/24
-
+```
 
 
