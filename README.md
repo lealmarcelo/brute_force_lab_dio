@@ -1,7 +1,8 @@
 # Laboratorio: Criando um ataque de brute force de senhas com medusa e kali linux (DIO)
-Este repositório documenta a execução de um desafio prático de segurança da informação, focado em ataques de força bruta. O projeto foi desenvolvido como parte do bootcamp de Cyber Segurança da Santander - Cibersegurança 2025 - DIO.
+Este repositório documenta a execução de um desafio prático de segurança da informação, focado em ataques de força bruta. O projeto foi desenvolvido como parte do bootcamp de Cyber Segurança do Santander - Cibersegurança 2025 - DIO.
 
 **Autor:** Marcelo Leal
+
 **LinkedIn:** https://www.linkedin.com/in/slmarcelo/
 
 ---
