@@ -130,7 +130,7 @@ ftp 192.168.56.103
 ```
 
 
-![acesso](imagens/validacaoftp.PNG)
+![acesso](imagens/validaçãoftp.PNG)
 
 
 ### 4 Ataque ao Formulário Web (DVWA formularios de login)
